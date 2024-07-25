@@ -43,14 +43,14 @@ SESSION_SECRET=your-session-secret
 MONGO_URI=your-mongodb-uri
 ```
 
-# Build and Run the Application
-# Without Docker
-### Build the application:
+## Build and Run the Application
+### Without Docker
+#### Build the application:
 
 ```bash
 npm run build
 ```
-# Start the application:
+## Start the application:
 
 ```bash
 npm start
@@ -58,8 +58,8 @@ npm start
 
 The application will be running on http://localhost:3000.
 
-# With Docker
-## Build the Docker image:
+### With Docker
+#### Build the Docker image:
 
 ```bash
 docker build -t state-management-system .
@@ -73,11 +73,11 @@ docker run -p 3000:3000 --env-file .env state-management-system
 
 The application will be available at http://localhost:3000.
 
-# API Documentation
-## API documentation is available at http://localhost:3000/api-docs. It is generated using Swagger and provides details about all available endpoints.
+## API Documentation
+### API documentation is available at http://localhost:3000/api-docs. It is generated using Swagger and provides details about all available endpoints.
 
-# Testing
-## To run unit tests for the API endpoints:
+## Testing
+### To run unit tests for the API endpoints:
 
 ```bash
 npm test
